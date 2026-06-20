@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontier Journey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&family=Arvo:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="dust-canvas"></canvas>
+
+    <audio id="bgm" loop src="assets/audio/bgm.mp3"></audio>
+
+    <header>
+        <div class="logo">★ FRONTIER JOURNEY ★</div>
+        <nav>
+            <a href="#home" class="active">HOME</a>
+            <a href="#scene2">JOURNEY</a>
+            <a href="#scene3">POSTER</a>
+            <a href="#about">ABOUT US</a>
+        </nav>
+        <button id="bgm-toggle" class="bgm-btn" aria-label="Toggle Background Music">
+            <span class="music-icon">🎵</span>
+            <span class="music-text">PLAY MUSIC</span>
+            <div class="eq-waves">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+    </header>
+
+    <section id="home" class="scene hero-scene">
+        <div class="scene-bg hero-bg"></div>
+        <div class="overlay"></div>
+        <div class="content hero-content-left">
+            <h1 class="main-title-left">
+                <span class="title-line-1">EVERY JOURNEY</span>
+                <span class="title-line-2">BEGINS WITH A DREAM.</span>
+            </h1>
+            <div class="star-divider-left">★</div>
+            <div class="scroll-indicator-left">
+                <p>SCROLL</p>
+                <div class="mouse-icon-left"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="scene2" class="scene transition-scene">
+        <div class="scene-bg transition-bg"></div>
+        <div class="overlay"></div>
+        <div class="content journey-content-corner">
+            <p class="poetic-line">THE ROAD DEFINES YOU.</p>
+            <p class="poetic-line">THE STRUGGLES SHAPE YOU.</p>
+            <p class="poetic-line">THE PURPOSE DRIVES YOU.</p>
+            <div class="down-arrow-corner">↓</div>
+        </div>
+    </section>
+
+    <section id="scene3" class="scene poster-scene">
+        <div class="poster-container">
+            <div class="original-poster-wrapper">
+                <img src="assets/image/poster-bg.jpg" alt="The Legend of the Modern Engineer Poster" class="original-poster-img">
+            </div>
+            <button class="cta-btn poster-cta">→ CONTINUE THE JOURNEY →</button>
+        </div>
+    </section>
+
+    <section id="about" class="scene about-scene">
+        <div class="scene-bg about-bg"></div>
+        <div class="overlay"></div>
+        <div class="about-container">
+            <h2 class="about-title">ABOUT US</h2>
+            <div class="star-divider">★</div>
+            
+            <p class="about-intro-text">
+                Welcome to the Frontier. This project is a cinematic storytelling journey representing the daily struggles of student life in engineering. Just like the pioneers of old, we forge our path through early mornings, slow connections, and endless assignments.
+            </p>
+
+            <h3 class="team-section-title">★ TEAM MEMBERS ★</h3>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-card-inner">
+                        <span class="card-wanted">WANTED</span>
+                        <h4 class="member-name">Sanjeevi</h4>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-card-inner">
+                        <span class="card-wanted">WANTED</span>
+                        <h4 class="member-name">Samintha Naveen</h4>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-card-inner">
+                        <span class="card-wanted">WANTED</span>
+                        <h4 class="member-name">Roshan</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="about-subtext">
+                We study. We struggle. We survive.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>— ⚜ A CINEMATIC STORYTELLING EXPERIENCE ⚜ —</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
